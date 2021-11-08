@@ -73,11 +73,9 @@ export class Router {
     }
 
     // 2
-    if (page == 'home'){
-      var hash = '';
-    }
-    else{
-      var hash = '#${page}';
+    let hash = "";
+    if (page != 'home'){
+      hash = "#" + page;
     }
 
     // 3
