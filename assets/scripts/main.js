@@ -221,11 +221,11 @@ function bindPopstate() {
    * creating an infinite loop
    */
   window.addEventListener('popstate', event =>{
-    if (!event.state){
-      router.navigate('home', true);
+    if (!!event.state){
+      router.navigate(event.state, true);  
     }
     else{
-      router.navigate(event.state, true);
+      router.navigate('home', true);
     }
   });
 }
