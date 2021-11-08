@@ -121,7 +121,7 @@ function createRecipeCards() {
    * After this step you should see multiple cards rendered like the end of the last
    * lab
    */
-  for (let i = i; i < recipes.length; i++){
+  for (let i = 1; i < recipes.length; i++){
     const newRecipeCard = document.createElement("recipe-card");
     newRecipeCard.data = recipeData[recipes[i]];
     const newPage = recipeData[recipes[i]]["page-name"];
